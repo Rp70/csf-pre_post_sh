@@ -78,4 +78,6 @@ fi
 copy_script "csfpre.sh" ${CSFPRESH_SCRIPT}
 copy_script "csfpost.sh" ${CSFPOSTSH_SCRIPT}
 
+echo "Installed!"
+
 exit 0
