@@ -8,8 +8,10 @@ CSFPRED_PATH="/usr/local/include/csf/pre.d"
 CSFPOSTD_PATH="/usr/local/include/csf/post.d"
 
 function copy_script {
-	local csf_script=$1
-	local csf_dst_path=$2
+	local csf_script;
+	local csf_dst_path;
+	csf_script=$1
+	csf_dst_path=$2
 
 	if [ -f ${csf_dst_path} ]; then
 		md5_0=`md5sum ${csf_script} | awk '{ print $1 }'`
