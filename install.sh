@@ -46,7 +46,7 @@ function copy_script {
 }
 
 # Verify /bin/bash is linked to /bin/sh
-shell="bash"
+shell="(b|d)ash"
 sh_shell=`ls -l /bin/sh | awk '{ print $NF }'`
 
 if [ ${sh_shell} != ${shell} -a ${sh_shell} != "/bin/${shell}" ]; then
