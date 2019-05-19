@@ -15,7 +15,7 @@ function copy_script {
 		md5_0=`md5sum ${csf_script} | awk '{ print $1 }'`
 		md5_1=`md5sum ${csf_dst_path} | awk '{ print $1 }'`
 
-		if [ ${md5_0} == ${md5_1} ]; then
+		if [ ${md5_0} = ${md5_1} ]; then
 			echo "The script ${csf_script} already exists and is up to date"
 			exit 0
 		else
@@ -29,12 +29,12 @@ function copy_script {
 
 				read answer
 
-				if [ ${answer} == "y" -o ${answer} == "n" ]; then
+				if [ ${answer} = "y" -o ${answer} = "n" ]; then
 					ok=1
 				fi
 			done
 
-			if [ ${answer} == "n" ]; then
+			if [ ${answer} = "n" ]; then
 				exit 1
 			fi
 		fi
