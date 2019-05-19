@@ -7,7 +7,7 @@ CSFPOSTSH_SCRIPT="${CSF_BIN_PATH}/csfpost.sh"
 CSFPRED_PATH="/usr/local/include/csf/pre.d"
 CSFPOSTD_PATH="/usr/local/include/csf/post.d"
 
-copy_script {
+copy_script() {
 	local csf_script
 	local csf_dst_path
 	csf_script=$1
