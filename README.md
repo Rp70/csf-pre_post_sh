@@ -4,10 +4,10 @@
 Installation is quite straightforward:
 
 ```
-# cd /usr/local/src
-# git clone https://github.com/Rp70/csf-pre_post_sh.git
-# cd csf-pre_post_sh
-# sh install.sh
+cd /usr/local/src
+sudo git clone https://github.com/Rp70/csf-pre_post_sh.git
+cd csf-pre_post_sh
+sudo sh install.sh
 ```
 
 ## User Feedback
